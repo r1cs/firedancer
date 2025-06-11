@@ -1375,6 +1375,15 @@ dynamic_port_range = "8900-9000"
         # slow clients but also increase memory usage.
         send_buffer_size_mb = 5120
 
+[geyser]
+# Enable Geyser interface even if no Geyser configs are specified. [default: false]
+# Passed to the Agave client with the `--geyser-plugin-always-enabled` argument.
+    always_enabled = false
+
+# Specify the configuration file for the Geyser plugin.
+# Passed to the Agave client with the `--geyser-plugin-config` argument.
+    config_path = ""
+
 # These options can be useful for development, but should not be used
 # when connecting to a live cluster, as they may cause the validator to
 # be unstable or have degraded performance or security.  The program

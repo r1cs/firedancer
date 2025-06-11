@@ -423,6 +423,10 @@ struct fd_config {
     } archiver;
 
   } tiles;
+  struct {
+      int always_enabled;
+      char config_path[ PATH_MAX ];
+    } geyser;
 };
 
 typedef struct fd_config fd_config_t;
